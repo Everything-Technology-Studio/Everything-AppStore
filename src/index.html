@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <title>蓝云应用商店</title>
+  <meta name="description" content="MDUI 中的抽屉式导航栏（后面简称抽屉栏）可以从页面左侧或右侧滑出，一个页面可以拥有多个抽屉栏。" />
+  <link rel="preconnect" href="//cdn.w3cbus.com">
+  <link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css"><link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/docs~1/static/index.68b5d124.css">
+  <script>
+    function changeFrameHeight() {
+        var iframe = document.getElementById("iframe");
+        iframe.height = document.documentElement.clientHeight;
+    }
+    //onresize属性可以用来获取或设置当前窗口的resize事件的事件处理函数
+    //onresize事件会在窗口或框架被调整大小时发生
+    window.onresize = function() {
+        changeFrameHeight();
+
+}
+function minimizeWindowConcise() {
+  (
+    document.exitFullscreen
+    || document.mozCancelFullScreen
+    || document.webkitExitFullscreen
+    || document.msExitFullscreen
+  )?.call(document);
+
+    // Fallback for browsers that don't support fullscreen API, same as before.
+  if(window.innerWidth === screen.availWidth && window.innerHeight === screen.availHeight){
+    window.open('', '_self', '');
+    window.close();
+  }
+}
+
+
+</script>
+
+<style>
+.mdui-appbar {
+ -webkit-app-region: drag;
+ }
+ .mdui-btn {
+ -webkit-app-region: no-drag;
+ }
+ .mdui-tab {
+ -webkit-app-region: no-drag;
+ }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 6px;
+  background: rgba(#101F1C, 0.1);
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144,147,153,.5);
+  background-clip: padding-box;
+  min-height: 28px;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144,147,153,.3);
+}
+</style>
+  </body>
+</head>
+<body
+  class="
+    mdui-drawer-body-left
+    mdui-appbar-with-toolbar
+    mdui-theme-primary-indigo
+    mdui-theme-accent-pink
+    mdui-theme-layout-auto"
+  id="p-d"
+>
+<div class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-blue-600">
+    <a href="javascript:;" class="mdui-typo-title">万物应用商店</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <a  onclick="minimizeWindow()" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '关闭'}">
+      <i class="mdui-icon material-icons">close</i>
+  
+        </svg>
+      </a>
+  </a>
+  <a href="JavaScript:window.close()" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '关闭'}">
+    <i class="mdui-icon material-icons">close</i>
+
+      </svg>
+    </a>
+  </div>
+  <div class="mdui-tab mdui-color-blue-700" mdui-tab>
+    <a href="#tab1" class="mdui-ripple mdui-ripple-white">
+      <i class="mdui-icon material-icons">home</i>
+      <label>主页</label>
+    </a>
+    <a href="#tab2" mdui-tooltip="{content: '一款好用的工具箱'}" class="mdui-ripple mdui-ripple-white">
+      <i class="mdui-icon material-icons">build</i>
+      <label>浏览器扩展</label>
+    </a>
+    <a href="#tab3" class="mdui-ripple mdui-ripple-white">
+      <i class="mdui-icon material-icons">error</i>
+      <label>Metro应用</label>
+    </a>
+    <a href="#tab4" class="mdui-ripple mdui-ripple-white">
+      <i class="mdui-icon material-icons">info</i>
+      <label>关于</label>
+    </a>
+  </div>
+</div>
+<div class="mdui-container-fluid">
+  <div id="tab1">
+  <br><br><p align="center"><img width="200px" src="./img/Welcome.png" align="center" alt="蓝云工具箱" />
+  <br><br>嗷呜~，欢迎来到蓝芸柒和万物村小伙伴们的网站，awa~
+  <br>Microsoft 交流群：746817337
+  <br>我们的村子总群之一（可以交流美食哦）：720490870
+  <br><br>
+  <div class="mdui-divider"></div>
+  <br>
+ 
+  <br></div>
+  <div id="tab2">
+    <link rel="preload stylesheet" href="https://pixpinapp.com/assets/style.de29d75b.css" as="style">
+
+    <link rel="modulepreload" href="https://pixpinapp.com/assets/chunks/framework.a767a766.js">
+</head>
+  <body>
+    <div id="app"><div class="Layout" data-v-68ec43f6=""><!--[--><!--]--><!--[--><span tabindex="-1" data-v-3f702698=""></span><a href="https://pixpinapp.com/#VPContent" class="VPSkipLink visually-hidden" data-v-3f702698=""> Skip to content </a><!--]--><!----><!----><!----><div class="VPContent is-home" id="VPContent" data-v-68ec43f6="" data-v-cf3d3566=""><div class="VPHome" data-v-cf3d3566="" data-v-05d5c122=""><!--[--><!--]--><div class="VPHero has-image VPHomeHero" data-v-05d5c122="" data-v-eff4c44d=""><div class="container" data-v-eff4c44d=""><div class="main" data-v-eff4c44d=""><!--[--><h1 class="name" data-v-eff4c44d=""><span class="clip" data-v-eff4c44d="">万物工具箱</span></h1><p class="text" data-v-eff4c44d="">一款好用的工具箱</p><p class="tagline" data-v-eff4c44d="">版本：5.0
+大小：500MB
+更新日期：2025-01-
+支持 Windows Vista 以上版本</p><!--]--><div class="actions" data-v-eff4c44d=""><!--[--><div class="action" data-v-eff4c44d=""><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-700" mdui-dialog="{target: '#toolbox-down'}"><i class="mdui-icon material-icons">&#xe2c4;</i>立即下载</button></div><div class="action" data-v-eff4c44d=""><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-700" mdui-dialog="{target: '#toolbox-log'}"><i class="mdui-icon material-icons">&#xe8d2;</i>更新日志</a></button></div><!--]--></div></div><div class="image" data-v-eff4c44d=""><div class="image-container" data-v-eff4c44d=""><div class="image-bg" data-v-eff4c44d=""></div><!--[--><!--[--><img class="VPImage image-src"  width="500px" src="./img/蓝云工具箱_1.png" alt="VitePress" data-v-4dd438fa=""><!--]--><!--]--></div></div></div></div><!--[--><!--]--><!--[--><!--]--><div class="VPFeatures VPHomeFeatures" data-v-05d5c122="" data-v-c5f060c6=""><div class="container" data-v-c5f060c6=""><div class="items" data-v-c5f060c6=""><!--[--><div class="grid-6 item" data-v-c5f060c6=""><div class="VPLink no-icon VPFeature" data-v-c5f060c6="" data-v-03a91a90=""><!--[--><article class="box" data-v-03a91a90=""><!--[--><img class="VPImage" src="./PixPin 截图_贴图_长截图_文字识别_标注 _ PixPin 截图_贴图_长截图_文字识别_标注_files/capture.png" height="48" width="48" alt="" data-v-4dd438fa=""><!--]--><h2 class="title" data-v-03a91a90="">截图</h2><p class="details" data-v-03a91a90="">自由选择或自动探测窗口，设定截图范围，精准截取所需内容</p><!----></article><!--]--></div></div><div class="grid-6 item" data-v-c5f060c6=""><div class="VPLink no-icon VPFeature" data-v-c5f060c6="" data-v-03a91a90=""><!--[--><article class="box" data-v-03a91a90=""><!--[--><img class="VPImage" src="./PixPin 截图_贴图_长截图_文字识别_标注 _ PixPin 截图_贴图_长截图_文字识别_标注_files/pin.png" height="48" width="48" alt="" data-v-4dd438fa=""><!--]--><h2 class="title" data-v-03a91a90="">贴图</h2><p class="details" data-v-03a91a90="">所截取的图像“贴”在其他窗口之上，以供随时参考查阅</p><!----></article><!--]--></div></div><div class="grid-6 item" data-v-c5f060c6=""><div class="VPLink no-icon VPFeature" data-v-c5f060c6="" data-v-03a91a90=""><!--[--><article class="box" data-v-03a91a90=""><!--[--><img class="VPImage" src="./PixPin 截图_贴图_长截图_文字识别_标注 _ PixPin 截图_贴图_长截图_文字识别_标注_files/edit.png" height="48" width="48" alt="" data-v-4dd438fa=""><!--]--><h2 class="title" data-v-03a91a90="">标注</h2><p class="details" data-v-03a91a90="">丰富的标注工具，可以对截取的图片进行标注，准确地表达意图</p><!----></article><!--]--></div></div><div class="grid-6 item" data-v-c5f060c6=""><div class="VPLink no-icon VPFeature" data-v-c5f060c6="" data-v-03a91a90=""><!--[--><article class="box" data-v-03a91a90=""><!--[--><img class="VPImage" src="./PixPin 截图_贴图_长截图_文字识别_标注 _ PixPin 截图_贴图_长截图_文字识别_标注_files/ocr.png" height="48" width="48" alt="" data-v-4dd438fa=""><!--]--><h2 class="title" data-v-03a91a90="">文本识别</h2><p class="details" data-v-03a91a90="">通过强大的文本识别算法，迅速准确地识别出图像上的文字</p><!----></article><!--]--></div></div><div class="grid-6 item" data-v-c5f060c6=""><div class="VPLink no-icon VPFeature" data-v-c5f060c6="" data-v-03a91a90=""><!--[--><article class="box" data-v-03a91a90=""><!--[--><img class="VPImage" src="./PixPin 截图_贴图_长截图_文字识别_标注 _ PixPin 截图_贴图_长截图_文字识别_标注_files/longshot.png" height="48" width="48" alt="" data-v-4dd438fa=""><!--]--><h2 class="title" data-v-03a91a90="">长截图</h2><p class="details" data-v-03a91a90="">不再局限于屏幕尺寸，使用长截图智能拼接算法，截取更长更宽的图像</p><!----></article><!--]--></div></div><div class="grid-6 item" data-v-c5f060c6=""><div class="VPLink no-icon VPFeature" data-v-c5f060c6="" data-v-03a91a90=""><!--[--><article class="box" data-v-03a91a90=""><!--[--><img class="VPImage" src="./PixPin 截图_贴图_长截图_文字识别_标注 _ PixPin 截图_贴图_长截图_文字识别_标注_files/gif.png" height="48" width="48" alt="" data-v-4dd438fa=""><!--]--><h2 class="title" data-v-03a91a90="">截动图</h2><p class="details" data-v-03a91a90="">把屏幕的操作记录在动图上，录制的同时还可以同时使用标注工具</p><!----></article><!--]--></div></div><!--]--></div></div></div><!--[--><!--]--><div style="position:relative;" data-v-05d5c122=""><div></div></div></div></div><!----><!--[--><!--]--></div></div>
+    
+
+      <div class="mdui-dialog" id="toolbox-down">
+        <div class="mdui-dialog-content">
+          <div class="mdui-dialog-title">下载链接</div>
+            
+            <br>https://pan.huang1111.cn/s/EvElFb
+            <br>https://www.alipan.com/s/7Pxhhbvh1U7
+        </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple" mdui-dialog-close>确定</button>
+        </div>
+      </div>
+      
+      <div class="mdui-dialog" id="toolbox-log">
+        <div class="mdui-dialog-content">
+          <div class="mdui-dialog-title">更新日志</div>
+          <iframe src="./toolboxlog.html" width="100%" height="1700" scrolling="no" frameborder="no"></iframe>
+        </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple" mdui-dialog-close>确定</button>
+        </div>
+      </div>
+
+      <h2 align="center"></h2>
+      
+
+    <br><div class="mdui-appbar">
+      <div class="mdui-tab mdui-color-blue-700" mdui-tab>
+        <a href="#example3-tab2-1" class="mdui-ripple mdui-ripple-white">截图</a>
+        <a href="#example3-tab2-2" class="mdui-ripple mdui-ripple-white">不支持32位的工具</a>
+        <a href="#example3-tab2-3" class="mdui-ripple mdui-ripple-white">电脑要求</a>
+      </div>
+    </div>
+    <div class="mdui-container-fluid">
+      <div id="example3-tab2-1">
+        <p align="center">
+          <br><img width="600px" src="./img/蓝云工具箱_1.png" align="center" alt="蓝云工具箱" />
+          <br><br><img width="600px" src="./img/蓝云工具箱_2.png" align="center" alt="蓝云工具箱" />
+          <br><br><img width="600px" src="./img/蓝云工具箱_3.png" align="center" alt="蓝云工具箱" /><br><br>
+      </div>
+      <div id="example3-tab2-2">
+            <br>LocalSend
+            <br>RayLink_Lite
+            <br>https://www.alipan.com/s/7Pxhhbvh1U7
+        <br><br>
+      </div>
+      <div id="example3-tab2-3">
+        <br>系统：Windows Vista、7、8、8.1、10、11
+          <br>显示器：能显示画面的（）推荐 1280×720 以上分辨率，最低 800×600 分辨率
+          <br>CPU：能计算的（）
+          <br>硬盘空间：≥500MB（运行其中的工具需预留C盘100MB左右和工具所在盘空间。）
+          <br><br>
+      </div>
+  </div>
+</div>
+  <div id="tab3">
+    <p align="center">
+      <p align="center">
+        <br><br><img width="130px" src="https://s21.ax1x.com/2024/04/04/pFbBAKI.png" align="center" alt="蓝屏模拟器" />
+        <h2 align="center">蓝屏模拟器3（LTS）</h2>
+        <p align="center">模拟蓝屏画面</p>
+        <p align="center">系统:Win2000+ 版本：3.4.3 大小：1.54MB 更新日期：2024-04-10</p>
+         <p align="center"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-700">立即下载</button> <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue-700">更新日志</button></p>
+        </p>
+       
+        <h2 align="center"></h2>
+        
+
+      <br><div class="mdui-appbar">
+        <div class="mdui-tab mdui-color-blue-700" mdui-tab>
+          <a href="#example3-tab4-1" class="mdui-ripple mdui-ripple-white">截图</a>
+          <a href="#example3-tab4-2" class="mdui-ripple mdui-ripple-white">下载地址</a>
+          <a href="#example3-tab4-3" class="mdui-ripple mdui-ripple-white">电脑要求</a>
+        </div>
+      </div>
+      <div class="mdui-container-fluid">
+        <div id="example3-tab4-1">
+          <p align="center">
+            <br><img width="600px" src="./img/蓝屏模拟器（LTS）.png" align="center" alt="蓝屏模拟器" />
+        </div>
+        <div id="example3-tab4-2">
+          <br>https://www.123pan.com/s/GLTtVv-BnejH.html
+          <br>https://pan.huang1111.cn/s/EvElFb
+          <br>https://www.alipan.com/s/7Pxhhbvh1U7
+          <br><br>
+        </div>
+        <div id="example3-tab4-3">
+          <br>- 系统：Windows 2000 以上版本
+            <br>- 显示器：推荐 1024×768 以上分辨率
+            <br>- CPU：All CPU
+            <br>- 硬盘：≥1.6MB 空间
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<div id="tab4">
+    <img
+    src="logo.png"
+    width="128"
+    height="128" />
+  </div>
+<br><p>软件版本:0.9.5</p>
+<p>网站版本:2.0 Beta</p>
+<p>MDUI版本:1.0.1</p>
+<p>Electron版本:22.0.0</p>
+<p>Chromium版本:108.0.5359.62</p>
+<br><p>Copyright © 2020-2023 蓝云Studio All rights reserved.</p>
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+<a id="anchor-top"></a>
+
+<iframe id="iframe"
+        name="iframe"
+        height="100%"
+        width="100%"
+        src="http://app-store-page.myym.gq/software.html"
+        scrolling="auto"
+        frameborder="0"
+        onload="changeFrameHeight()">
+</iframe>
+
+
+    </div>
+  </div>
+</div>
+<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script><script src="https://cdn.w3cbus.com/mdui/docs~1/static/index.74ecf734.js"></script>
